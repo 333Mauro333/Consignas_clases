@@ -1,0 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int numero = 0;
+
+
+
+	cout << "--- EJERCICIO 1 ---" << endl << endl;
+
+
+	cout << endl << endl << endl;
+
+
+
+	cout << "--- EJERCICIO 2 ---" << endl << endl;
+
+
+	cout << endl << endl << endl;
+
+
+
+	cout << "--- EJERCICIO 3 ---" << endl << endl;
+
+
+	cout << endl << endl << endl;
+
+
+
+	cout << "--- EJERCICIO 4 ---" << endl << endl;
+
+
+	cout << endl << endl << endl;
+
+
+
+	return 0;
+}

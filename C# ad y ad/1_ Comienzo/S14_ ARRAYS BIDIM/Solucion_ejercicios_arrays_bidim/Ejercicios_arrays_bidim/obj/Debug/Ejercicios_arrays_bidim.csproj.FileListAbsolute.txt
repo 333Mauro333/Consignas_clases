@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\bin\Debug\Ejercicios_arrays_bidim.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\bin\Debug\Ejercicios_arrays_bidim.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\bin\Debug\Ejercicios_arrays_bidim.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\obj\Debug\Ejercicios_arrays_bidim.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\obj\Debug\Ejercicios_arrays_bidim.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\obj\Debug\Ejercicios_arrays_bidim.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\1_ Comienzo\S14_ ARRAYS BIDIM\Solucion_ejercicios_arrays_bidim\Ejercicios_arrays_bidim\obj\Debug\Ejercicios_arrays_bidim.pdb

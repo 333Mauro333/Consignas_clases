@@ -1,0 +1,174 @@
+OUTPUT:
+cout y variables. Centrar en int, float, char, string.
+Concatenar variables con texto.
+
+
+INPUT:
+cin. Ingreso de un int y un char.
+
+
+INPUT2:
+cin de un string (getline). Ver código en la solución del ejercicio
+para saber con qué líneas de código solucionar el problema de los espacios.
+
+
+OPERADORES:
+Suma, resta, multiplicación, división y resto.
+Hacer con una nueva variable y al mostrar el mensaje.
+
+
+OPERADORES2:
+Nada que explicar.
+
+
+OPERADORES3:
+Mencionar la importancia de investigar y saber googlear cuando
+se necesita saber algo en programación.
+
+
+OPERADORES4:
+Forma de usar el módulo y la división para extraer una cifra
+específica de un número.
+Ejemplo con la división para extraer la centena. Recordar que
+dividir por 10 corre la coma. Mostrar ejemplo con la calculadora
+si este detalle no era sabido.
+Ejemplo con el módulo para extraer la unidad.
+Ejemplo para una cifra del medio.
+
+
+CONDICIONALES:
+if - else.
+operadores relacionales: > >= < <= == !=
+if - else if - else.
+
+
+CONDICIONALES2:
+Explicar que se pueden poner cuentas dentro de las
+condiciones (los paréntesis).
+Operadores && y ||.
+
+
+CONDICIONALES3:
+Básicamente, combinación de conceptos de ejercicios anteriores.
+
+
+CONDICIONALES4:
+Aviso de que no va a incluir letras con tilde, ya que no hay forma
+de que, mediante el input, lo tome correctamente.
+
+
+SWITCH:
+Nada que explicar, más que el nuevo concepto.
+Ir mencionando a medida que el alumno vaya avanzando y teniendo dudas.
+
+
+CALCULADORA:
+Primer programa que va a incluir todo lo que se vio antes.
+El resto se explica solo en la consigna.
+
+
+RANDOM:
+Fórmula del random. Semilla.
+
+
+RANDOM2:
+Explicar generación de números con coma.
+Explicar generación de letras random.
+
+
+ENUMS:
+Declaración de un enumerador.
+Uso de un enumerador (uno mostrando un mensaje y otro
+estableciendo valores).
+
+
+ENUMS2:
+Conversión de int a enum.
+valor igual a 1.
+
+
+PIEDRA, PAPEL O TIJERA:
+Repaso súper rápido de los enums.
+El resto se explica solo.
+
+
+LOOPS:
+Comparar un if con un while al explicarlo.
+Hacer una cuenta infinita. Limitarla con la condición.
+Do while con ingreso de número.
+For en 3 partes (sencilla).
+
+
+LOOPS2:
+Profundizar más en el for, ya que casi todos
+los ejercicios se resuelven con este concepto.
+
+
+LOOPS3:
+Enfocar específicamente en el for, introduciendo
+más en un for dentro de otro. Hacer imágenes
+para explicar (sobre filas y columnas), ya
+que sin ellas, la explicación puede resultar
+todo un poco confuso.
+
+
+MENU PRINCIPAL:
+Explicar que se va a tratar de un programa
+con varias pantallas. Administrar y separar
+las pantallas por enums como consejo.
+Dar ejemplo únicamente si me lo pide.
+
+ARRAYS:
+Mostrar cómo crear un arreglo.
+Mostrar cómo acceder a una posición específica.
+Resaltar que siempre que se use, hay que
+indicarle a qué posición se quiere acceder
+
+ARRAYS2:
+Mencionar que siempre se pueden usar más
+cosas, como por ejemplo, otros datos
+como un int o un bool, o más de un
+loop para resolver los ejercicios.
+
+ARRAY3:
+Recordar que revisar ejercicios
+anteriores pueden ayudar para recordar
+aspectos específicos relacionados con lo
+que piden estos puntos.
+
+ARRAY4:
+Explicar que estos ejercicios se pueden
+resolver de dos formas:
+1. Utilizando un arreglo de chars
+2. Usando directamente a un string como
+un arreglo de chars.
+
+CAZARRECOMPENSAS:
+Destacar que es un ejercicio en el cual
+se puede incluir todo lo que vimos, y
+que se es libre de encararlo como más
+le parezca.
+
+ARRAYS BIDIM:
+Destacar que en primer lugar están las
+filas (renglones) y en segundo lugar,
+las columnas. Representar con la clásica
+imagen de filas y columnas.
+Detallar cómo se declara todo.
+Comparar con arreglos simples.
+Lo mismo al incluir el for en esto.
+
+ARRAYS BIDIM2:
+Mostrar posición específica. Colocar
+carácter especial de ejemplo para así,
+acceder a su posición y de esa forma,
+mostrarlo.
+
+LABERINTO:
+Ejercicio que se basa en poner en
+práctica los arrays bidimensionales.
+Consejo de usar variables para cada
+elemento del mapa.
+
+STRUCTS:
+

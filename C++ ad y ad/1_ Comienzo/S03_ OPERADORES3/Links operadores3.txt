@@ -1,0 +1,9 @@
+Consignas:
+https://drive.google.com/file/d/193B0MJCZ7hDqILnQQ8uXY3mZ_p16njHu/view?usp=sharing
+
+Solución con código fuente:
+https://drive.google.com/file/d/1W4VLn_csrnDJlN3Qf9Ua_SMkJDWAtOR2/view?usp=sharing
+
+Para comprobar cuentas:
+Calculadora de valores del círculo a partir del radio: https://www.calkoo.com/es/calculadora-circulo
+Calculadora de grados a radianes: https://es.planetcalc.com/71/

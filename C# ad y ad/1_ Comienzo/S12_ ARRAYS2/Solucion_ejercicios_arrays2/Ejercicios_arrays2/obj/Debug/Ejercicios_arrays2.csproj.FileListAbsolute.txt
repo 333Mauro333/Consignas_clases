@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\bin\Debug\Ejercicios_arrays2.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\bin\Debug\Ejercicios_arrays2.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\bin\Debug\Ejercicios_arrays2.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\obj\Debug\Ejercicios_arrays2.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\obj\Debug\Ejercicios_arrays2.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\obj\Debug\Ejercicios_arrays2.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS2\Solucion_ejercicios_arrays2\Ejercicios_arrays2\obj\Debug\Ejercicios_arrays2.pdb

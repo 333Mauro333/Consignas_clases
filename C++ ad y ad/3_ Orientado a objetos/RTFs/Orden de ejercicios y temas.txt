@@ -1,0 +1,38 @@
+01: Comienzo POO.
+02: Getters y setters.
+
+03: Prácticas con mi librería.
+
+04: 
+
+01: Presentación de personaje (comienzo POO).
+02: Corredor olímpico (comienzo, correr y descansar)
+03: Paracaidista (getters y setters).
+
+--- Presentación de librería mgtv ---
+
+03: Estrella en el cielo (probando la librería, ningún concepto).
+04: Calculadora (más estático). CAPTURA
+05: Balas en el muro (variables y funciones estáticas. Arreglo de objetos).
+06: Movimiento interactivo (función getKey).
+
+Hacer plan de explicaciones para seguir antes de dar los ejercicios.
+
+07: Nave espacial.
+08: Disparo del jugador (práctica, nada más).
+09: Snake (vectores).
+10: Consolas (relación de dependencia).
+11: Caballero medieval (relación de dependencia).
+12: Espectador (agregación).
+
+- agregar otro del rifle con la mira.
+- agregar uno de composición (auto con las ruedas, cada rueda va a
+tener una cantidad de aire determinada. definir límites. Va a poder
+volver a inflarlas y cambiar por la de repuesto si se pincha una).
+
+15: Dispositivos electrónicos (herencia).
+16: Tipos de enemigos (polimorfismo).
+17: Ejército de tropas (polimorfismo con métodos abstractos).
+18: Batalla épica (más polimorfismo, aplicándose en parámetros)
+
+Para C#, agregar otros temas como interfaces y eventos.

@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\bin\Debug\Ejercicios_loops2.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\bin\Debug\Ejercicios_loops2.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\bin\Debug\Ejercicios_loops2.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\obj\Debug\Ejercicios_loops2.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\obj\Debug\Ejercicios_loops2.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\obj\Debug\Ejercicios_loops2.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S10_ LOOPS2\Solucion_ejercicios_loops2\Ejercicios_loops2\obj\Debug\Ejercicios_loops2.pdb

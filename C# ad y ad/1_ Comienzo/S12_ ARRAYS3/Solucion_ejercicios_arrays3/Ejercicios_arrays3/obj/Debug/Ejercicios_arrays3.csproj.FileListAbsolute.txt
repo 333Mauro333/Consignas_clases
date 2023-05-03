@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\bin\Debug\Ejercicios_arrays3.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\bin\Debug\Ejercicios_arrays3.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\bin\Debug\Ejercicios_arrays3.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\obj\Debug\Ejercicios_arrays3.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\obj\Debug\Ejercicios_arrays3.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\obj\Debug\Ejercicios_arrays3.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S12_ ARRAYS3\Solucion_ejercicios_arrays3\Ejercicios_arrays3\obj\Debug\Ejercicios_arrays3.pdb

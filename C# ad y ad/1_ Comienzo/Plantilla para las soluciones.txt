@@ -1,0 +1,45 @@
+int numero = 0;
+
+
+
+Console.WriteLine("--- EJERCICIO 1 ---\n");
+
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.WriteLine("--- EJERCICIO 2 ---\n");
+
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.WriteLine("--- EJERCICIO 3 ---\n");
+
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.WriteLine("--- EJERCICIO 4 ---\n");
+
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.WriteLine("--- EJERCICIO 5 ---\n");
+
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.ReadKey(true);

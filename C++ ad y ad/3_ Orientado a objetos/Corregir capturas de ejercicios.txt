@@ -1,0 +1,14 @@
+13_ Rifle
+
+Concluir el ejercicio.
+
+
+14_ Automóvil F1
+
+Plantearlo entero. Una rueda tiene método "regular". Según si se infla más
+o menos (o está regulada), va a mostrar mensaje diferente.
+
+
+Echarle una ojeada a los anteriores (desde
+Calculadora para adelante).
+

@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C++ ad y ad\1_ Comienzo\S13_ Ejercicio CAZARRECOMPENSAS\Solucion_ejercicio_cazarrecompensas\Ejercicio_cazarrecompensas\main.cpp(39,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Ejercicio_cazarrecompensas.vcxproj -> C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C++ ad y ad\1_ Comienzo\S13_ Ejercicio CAZARRECOMPENSAS\Solucion_ejercicio_cazarrecompensas\Debug\Ejercicio_cazarrecompensas.exe

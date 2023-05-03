@@ -1,0 +1,5 @@
+1_ Explicar cada función.
+
+2_ Mandar los archivos en un .zip
+
+3_ Mostrar cómo incluir las funciones.

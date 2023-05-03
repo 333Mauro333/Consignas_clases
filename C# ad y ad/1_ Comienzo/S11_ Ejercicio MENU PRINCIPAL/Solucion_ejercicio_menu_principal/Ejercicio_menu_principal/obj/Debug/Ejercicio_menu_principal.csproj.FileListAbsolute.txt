@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\bin\Debug\Ejercicio_menu_principal.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\bin\Debug\Ejercicio_menu_principal.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\bin\Debug\Ejercicio_menu_principal.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\obj\Debug\Ejercicio_menu_principal.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\obj\Debug\Ejercicio_menu_principal.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\obj\Debug\Ejercicio_menu_principal.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\CONSIGNAS\C# ad y ad\1_ Comienzo\S11_ Ejercicio MENU PRINCIPAL\Solucion_ejercicio_menu_principal\Ejercicio_menu_principal\obj\Debug\Ejercicio_menu_principal.pdb
