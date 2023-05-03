@@ -1,0 +1,10 @@
+﻿  main.cpp
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(21,29): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(24,30): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(27,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(27,17): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(30,26): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(33,27): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(36,29): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\main.cpp(36,17): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Calculadora_costos_clases.vcxproj -> C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Calculadora_costos_clases\Debug\Calculadora_costos_clases.exe

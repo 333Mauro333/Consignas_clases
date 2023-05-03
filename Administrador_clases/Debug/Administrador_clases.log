@@ -1,0 +1,4 @@
+﻿  main_menu.cpp
+C:\Users\mauro\OneDrive\Escritorio\Temas\_MATERIAL\General\Administrador_clases\src\program_screens\main_menu\main_menu.cpp(18,23): error C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  screen.cpp
+  Generando código...
