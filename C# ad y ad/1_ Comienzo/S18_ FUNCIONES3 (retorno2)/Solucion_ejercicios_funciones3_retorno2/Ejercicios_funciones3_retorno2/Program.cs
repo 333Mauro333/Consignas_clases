@@ -27,8 +27,7 @@ namespace Ejercicios_funciones3_retorno2
 			string oracionEnMayuscula = "";
 
 			Persona[] persona = new Persona[2];
-			Persona personaMasGrande = new Persona();
-
+			Persona personaMasGrande;
 
 
 			Console.WriteLine("--- EJERCICIO 1 ---\n");
