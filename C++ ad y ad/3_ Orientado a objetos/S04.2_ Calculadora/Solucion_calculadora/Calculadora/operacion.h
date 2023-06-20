@@ -1,0 +1,3 @@
+#pragma once
+
+enum class OPERACION { SUMA = 1, RESTA, MULTIPLICACION, DIVISION, POTENCIA, RAIZ };

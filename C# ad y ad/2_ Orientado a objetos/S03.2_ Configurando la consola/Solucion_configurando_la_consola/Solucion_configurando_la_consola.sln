@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurando_la_consola", "Configurando_la_consola\Configurando_la_consola.csproj", "{4A9CC746-9D61-46E2-B1BF-E80D3811937E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A9CC746-9D61-46E2-B1BF-E80D3811937E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9CC746-9D61-46E2-B1BF-E80D3811937E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9CC746-9D61-46E2-B1BF-E80D3811937E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9CC746-9D61-46E2-B1BF-E80D3811937E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A684171-614E-4D6A-801B-B0D8C08D1E4D}
+	EndGlobalSection
+EndGlobal

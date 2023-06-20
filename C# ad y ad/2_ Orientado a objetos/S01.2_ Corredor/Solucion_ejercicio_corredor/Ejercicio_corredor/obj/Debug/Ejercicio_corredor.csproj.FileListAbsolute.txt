@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\bin\Debug\Ejercicio_corredor.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\bin\Debug\Ejercicio_corredor.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\bin\Debug\Ejercicio_corredor.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\obj\Debug\Ejercicio_corredor.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\obj\Debug\Ejercicio_corredor.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\obj\Debug\Ejercicio_corredor.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.2_ Corredor\Solucion_ejercicio_corredor\Ejercicio_corredor\obj\Debug\Ejercicio_corredor.pdb

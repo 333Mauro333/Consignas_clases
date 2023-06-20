@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\bin\Debug\Ejercicio_presentacion.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\bin\Debug\Ejercicio_presentacion.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\bin\Debug\Ejercicio_presentacion.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\obj\Debug\Ejercicio_presentacion.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\obj\Debug\Ejercicio_presentacion.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\obj\Debug\Ejercicio_presentacion.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.1_ Presentacion\Solucion_ejercicio_presentacion\Ejercicio_presentacion\obj\Debug\Ejercicio_presentacion.pdb

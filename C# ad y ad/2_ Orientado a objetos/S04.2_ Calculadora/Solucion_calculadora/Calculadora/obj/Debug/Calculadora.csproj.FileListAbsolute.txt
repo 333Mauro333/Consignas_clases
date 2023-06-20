@@ -1,0 +1,10 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\bin\Debug\MgtvLibrary.dll
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\bin\Debug\MgtvLibrary.dll.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\obj\Debug\Calculadora.csproj.CopyComplete
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\obj\Debug\Calculadora.pdb

@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\bin\Debug\Ejercicio_automovil.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\bin\Debug\Ejercicio_automovil.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\bin\Debug\Ejercicio_automovil.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\obj\Debug\Ejercicio_automovil.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\obj\Debug\Ejercicio_automovil.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\obj\Debug\Ejercicio_automovil.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S01.3_ Automovil\Solucion_ejercicio_automovil\Ejercicio_automovil\obj\Debug\Ejercicio_automovil.pdb

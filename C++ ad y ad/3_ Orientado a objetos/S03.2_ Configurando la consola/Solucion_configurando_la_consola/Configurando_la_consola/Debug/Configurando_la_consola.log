@@ -1,0 +1,3 @@
+﻿  main.cpp
+mgtv_library.lib(mgtv_library.obj) : warning LNK4099: no se encontró PDB 'mgtv_library.pdb' con 'mgtv_library.lib(mgtv_library.obj)' o en 'C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S03.2_ Configurando la consola\Solucion_configurando_la_consola\Debug\mgtv_library.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  Configurando_la_consola.vcxproj -> C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S03.2_ Configurando la consola\Solucion_configurando_la_consola\Debug\Configurando_la_consola.exe

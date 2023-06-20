@@ -1,0 +1,10 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\bin\Debug\Estrellas_en_el_cielo.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\bin\Debug\Estrellas_en_el_cielo.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\bin\Debug\Estrellas_en_el_cielo.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\bin\Debug\MgtvLibrary.dll
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\bin\Debug\MgtvLibrary.dll.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\obj\Debug\Estrellas_en_el_cielo.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\obj\Debug\Estrellas_en_el_cielo.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\obj\Debug\Estrellas_en_el_cielo.csproj.CopyComplete
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\obj\Debug\Estrellas_en_el_cielo.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.1_ Estrellas en el cielo\Solucion_estrellas_en_el_cielo\Estrellas_en_el_cielo\obj\Debug\Estrellas_en_el_cielo.pdb

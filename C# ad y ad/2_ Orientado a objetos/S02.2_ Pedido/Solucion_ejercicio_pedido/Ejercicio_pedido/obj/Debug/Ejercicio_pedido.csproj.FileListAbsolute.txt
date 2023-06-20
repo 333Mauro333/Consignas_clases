@@ -1,0 +1,7 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\bin\Debug\Ejercicio_pedido.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\bin\Debug\Ejercicio_pedido.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\bin\Debug\Ejercicio_pedido.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\obj\Debug\Ejercicio_pedido.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\obj\Debug\Ejercicio_pedido.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\obj\Debug\Ejercicio_pedido.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S02.2_ Pedido\Solucion_ejercicio_pedido\Ejercicio_pedido\obj\Debug\Ejercicio_pedido.pdb
