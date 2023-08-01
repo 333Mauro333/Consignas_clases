@@ -1,3 +1,6 @@
-#pragma once
+#ifndef OPERACION_H
+#define OPERACION_H
 
 enum class OPERACION { SUMA = 1, RESTA, MULTIPLICACION, DIVISION, POTENCIA, RAIZ };
+
+#endif // !OPERACION_H

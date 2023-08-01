@@ -12,246 +12,242 @@ namespace Control_de_luces
 			bool enPrograma = true;
 
 			int anchoConsola = ConsoleExt.GetScreenWidth();
-			int altoConsola = ConsoleExt.GetScreenHeight();
 
 			Luz[] luces = new Luz[5];
 
-			string titulo = "CONTROL DE LUCES";
+			const string titulo = "Control de luces";
 			int posicionTituloX = anchoConsola / 2 - titulo.Length / 2;
 			int posicionTituloY = 2;
 
 			int opcionIngresada = 0;
 
 
+
+			ConsoleExt.SetConsoleTitle(titulo);
+
 			for (int i = 0; i < luces.Length; i++)
 			{
 				luces[i] = new Luz();
 			}
 
-			for (int i = 0; i < cantidadLuces; i++)
+			for (int i = 0; i < luces.Length; i++)
 			{
-				luces[i]->setPosicion(anchoConsola / cantidadLuces * i + 1, posicionTituloY + 3);
+				luces[i].SetPosicion(anchoConsola / luces.Length * i + 1, posicionTituloY + 3);
 			}
 
 			while (enPrograma)
 			{
-				system("cls");
+				Console.Clear();
 
-#pragma region MUESTRA DE MENU
+				#region Muestra de menú
 
-				ConsoleExt::goToCoordinates(posicionTituloX, posicionTituloY);
-				ConsoleExt::writeWithColor(titulo, COLOR::C_BWHITE);
+				ConsoleExt.GoToCoordinates(posicionTituloX, posicionTituloY);
+				ConsoleExt.WriteWithColor(titulo.ToUpper(), ConsoleColor.Cyan);
 
-				for (int i = 0; i < cantidadLuces; i++)
+				for (int i = 0; i < luces.Length; i++)
 				{
-					luces[i]->draw();
+					luces[i].Draw();
 				}
 
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 20, posicionTituloY + 14);
-				cout << "Cantidad de luces encendidas: " << Luz::getLucesEncendidas() << ".";
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 20, posicionTituloY + 14);
+				Console.Write("Cantidad de luces encendidas: " + Luz.GetLucesEncendidas() + ".");
 
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 17);
-				cout << "1. ENCENDER TODAS LAS LUCES";
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 17);
+				Console.Write("1. ENCENDER TODAS LAS LUCES");
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 18);
+				Console.Write("2. APAGAR TODAS LAS LUCES");
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 19);
+				Console.Write("3. ENCENDER UNA LUZ");
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 20);
+				Console.Write("4. APAGAR UNA LUZ");
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 21);
+				Console.Write("5. SALIR");
 
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 18);
-				cout << "2. APAGAR TODAS LAS LUCES";
+				#endregion
 
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 19);
-				cout << "3. ENCENDER UNA LUZ";
-
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 20);
-				cout << "4. APAGAR UNA LUZ";
-
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 21);
-				cout << "5. SALIR";
-
-#pragma endregion
-
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - 20, posicionTituloY + 23);
-				cout << "Opcion ingresada: ";
-				cin >> opcionIngresada;
+				ConsoleExt.GoToCoordinates(anchoConsola / 2 - 20, posicionTituloY + 23);
+				Console.Write("Opción ingresada: ");
+				opcionIngresada = int.Parse(Console.ReadLine());
 
 				switch (opcionIngresada)
 				{
 					case 1:
 
-#pragma region ENCENDIDO DE TODAS LAS LUCES
+						#region Encendido de todas las luces
 
-						if (Luz::getLucesEncendidas() < cantidadLuces)
+						if (Luz.GetLucesEncendidas() < luces.Length)
 						{
-							for (int i = 0; i < cantidadLuces; i++)
+							for (int i = 0; i < luces.Length; i++)
 							{
-								if (!luces[i]->getEstaEncendida())
+								if (!luces[i].GetEstaEncendida())
 								{
-									luces[i]->encender();
+									luces[i].Encender();
 								}
 							}
 
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 37, posicionTituloY + 25);
-
-							ConsoleExt::writeWithColor("Todas las luces fueron prendidas. ", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 37, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Todas las luces fueron prendidas. ", ConsoleColor.Green);
 						}
 						else
 						{
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 38, posicionTituloY + 25);
-							ConsoleExt::writeWithColor("Todas las luces ya estan prendidas. ", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 38, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Todas las luces ya están prendidas. ", ConsoleColor.Green);
 						}
 
-						ConsoleExt::writeWithColor("Presione cualquier tecla para continuar... ", COLOR::C_GREEN);
-						ConsoleExt::getKey(true);
+						ConsoleExt.WriteWithColor("Presione cualquier tecla para continuar... ", ConsoleColor.Green);
+						Console.ReadKey(true);
 
-#pragma endregion
+						#endregion
 
 						break;
 
 					case 2:
 
-#pragma region APAGADO DE TODAS LAS LUCES
+						#region Apagado de todas las luces
 
-						if (Luz::getLucesEncendidas() > 0)
+						if (Luz.GetLucesEncendidas() > 0)
 						{
-							for (int i = 0; i < cantidadLuces; i++)
+							for (int i = 0; i < luces.Length; i++)
 							{
-								if (luces[i]->getEstaEncendida())
+								if (luces[i].GetEstaEncendida())
 								{
-									luces[i]->apagar();
+									luces[i].Apagar();
 								}
 							}
 
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 36, posicionTituloY + 25);
-
-							ConsoleExt::writeWithColor("Todas las luces fueron apagadas. ", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 36, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Todas las luces fueron apagadas. ", ConsoleColor.Green);
 						}
 						else
 						{
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 34, posicionTituloY + 25);
-							ConsoleExt::writeWithColor("Las luces ya estan apagadas. ", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 34, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Las luces ya están apagadas. ", ConsoleColor.Green);
 						}
 
-						ConsoleExt::writeWithColor("Presione cualquier tecla para continuar... ", COLOR::C_GREEN);
-						ConsoleExt::getKey(true);
+						ConsoleExt.WriteWithColor("Presione cualquier tecla para continuar... ", ConsoleColor.Green);
+						Console.ReadKey(true);
 
-#pragma endregion
+						#endregion
 
 						break;
 
 					case 3:
 
-#pragma region ENCENDIDO DE UNA LUZ
+						#region Encendido de una luz
 
-						if (Luz::getLucesEncendidas() != cantidadLuces)
+						if (Luz.GetLucesEncendidas() != luces.Length)
 						{
 							do
 							{
-								borrarPantalla(posicionTituloY + 17);
+								BorrarPantalla(posicionTituloY + 17);
 
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 25, posicionTituloY + 17);
-								cout << "Ingrese el numero de luz que desea encender (entre 1 y " << cantidadLuces << "): ";
-								cin >> opcionIngresada;
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 25, posicionTituloY + 17);
+								Console.Write("Ingrese el número de luz que desea encender (entre 1 y " + luces.Length + "): ");
+								opcionIngresada = int.Parse(Console.ReadLine());
 
-							} while (opcionIngresada < 1 || opcionIngresada > cantidadLuces);
+							} while (opcionIngresada < 1 || opcionIngresada > luces.Length);
 
-							if (!luces[opcionIngresada - 1]->getEstaEncendida())
+							if (!luces[opcionIngresada - 1].GetEstaEncendida())
 							{
-								luces[opcionIngresada - 1]->encender();
+								luces[opcionIngresada - 1].Encender();
 
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 29, posicionTituloY + 19);
-								ConsoleExt::writeWithColor("La luz fue encendida. ", COLOR::C_GREEN);
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 29, posicionTituloY + 19);
+								ConsoleExt.WriteWithColor("La luz fue encendida. ", ConsoleColor.Green);
 							}
 							else
 							{
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 31, posicionTituloY + 19);
-								ConsoleExt::writeWithColor("La luz ya esta encendida. ", COLOR::C_GREEN);
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 31, posicionTituloY + 19);
+								ConsoleExt.WriteWithColor("La luz ya está encendida. ", ConsoleColor.Green);
 							}
 						}
 						else
 						{
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 38, posicionTituloY + 25);
-							ConsoleExt::writeWithColor("Todas las luces ya estan prendidas.", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 38, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Todas las luces ya están prendidas.", ConsoleColor.Green);
 						}
 
-						ConsoleExt::writeWithColor("Presione cualquier tecla para continuar... ", COLOR::C_GREEN);
-						ConsoleExt::getKey(true);
+						ConsoleExt.WriteWithColor("Presione cualquier tecla para continuar... ", ConsoleColor.Green);
+						Console.ReadKey(true);
 
-#pragma endregion
+						#endregion
 
 						break;
 
 					case 4:
 
-#pragma region APAGADO DE UNA LUZ
+						#region Apagado de una luz
 
-						if (Luz::getLucesEncendidas() != 0)
+						if (Luz.GetLucesEncendidas() != 0)
 						{
 							do
 							{
-								borrarPantalla(posicionTituloY + 17);
+								BorrarPantalla(posicionTituloY + 17);
 
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 25, posicionTituloY + 17);
-								cout << "Ingrese el numero de luz que desea apagar (entre 1 y " << cantidadLuces << "): ";
-								cin >> opcionIngresada;
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 25, posicionTituloY + 17);
+								Console.Write("Ingrese el número de luz que desea apagar (entre 1 y " + luces.Length + "): ");
+								opcionIngresada = int.Parse(Console.ReadLine());
 
-							} while (opcionIngresada < 1 || opcionIngresada > cantidadLuces);
+							} while (opcionIngresada < 1 || opcionIngresada > luces.Length);
 
-							if (luces[opcionIngresada - 1]->getEstaEncendida())
+							if (luces[opcionIngresada - 1].GetEstaEncendida())
 							{
-								luces[opcionIngresada - 1]->apagar();
+								luces[opcionIngresada - 1].Apagar();
 
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 28, posicionTituloY + 19);
-								ConsoleExt::writeWithColor("La luz fue apagada. ", COLOR::C_GREEN);
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 28, posicionTituloY + 19);
+								ConsoleExt.WriteWithColor("La luz fue apagada. ", ConsoleColor.Green);
 							}
 							else
 							{
-								ConsoleExt::goToCoordinates(anchoConsola / 2 - 30, posicionTituloY + 19);
-								ConsoleExt::writeWithColor("La luz ya esta apagada. ", COLOR::C_GREEN);
+								ConsoleExt.GoToCoordinates(anchoConsola / 2 - 30, posicionTituloY + 19);
+								ConsoleExt.WriteWithColor("La luz ya está apagada. ", ConsoleColor.Green);
 							}
 						}
 						else
 						{
-							ConsoleExt::goToCoordinates(anchoConsola / 2 - 34, posicionTituloY + 25);
-							ConsoleExt::writeWithColor("Las luces ya estan apagadas. ", COLOR::C_GREEN);
+							ConsoleExt.GoToCoordinates(anchoConsola / 2 - 34, posicionTituloY + 25);
+							ConsoleExt.WriteWithColor("Las luces ya están apagadas. ", ConsoleColor.Green);
 						}
 
-						ConsoleExt::writeWithColor("Presione cualquier tecla para continuar... ", COLOR::C_GREEN);
-						ConsoleExt::getKey(true);
+						ConsoleExt.WriteWithColor("Presione cualquier tecla para continuar... ", ConsoleColor.Green);
+						Console.ReadKey(true);
 
-#pragma endregion
+						#endregion
 
 						break;
 
 					case 5:
 
-#pragma region FINALIZACION DEL PROGRAMA
-
+						// Se finaliza el programa.
 						enPrograma = false;
-
-						ConsoleExt::goToCoordinates(anchoConsola / 2 - 37, posicionTituloY + 25);
-						ConsoleExt::writeWithColor("Gracias por utilizar. Presione cualquier tecla para cerrar la ventana... ", COLOR::C_GREEN);
-
-#pragma endregion
 
 						break;
 				}
 			}
 
+			ConsoleExt.GoToCoordinates(anchoConsola / 2 - 37, posicionTituloY + 25);
+			ConsoleExt.WriteWithColor("Gracias por utilizar. Presione cualquier tecla para cerrar la ventana... ", ConsoleColor.Green);
+
+
 
 			Console.ReadKey(true);
 		}
 
-		static void borrarLinea(int linea)
+		static void BorrarLinea(int linea)
 		{
-			for (int i = 0; i < ConsoleExt::getScreenWidth(); i++)
+			for (int i = 0; i < ConsoleExt.GetScreenWidth(); i++)
 			{
-				ConsoleExt::goToCoordinates(i + 1, linea);
-				cout << " ";
+				ConsoleExt.GoToCoordinates(i, linea);
+				Console.Write(" ");
 			}
 		}
-		static void borrarPantalla(int lineaDesdeDondeBorrar)
+		static void BorrarPantalla(int lineaDesdeDondeBorrar)
 		{
-			for (int i = lineaDesdeDondeBorrar; i <= ConsoleExt::getScreenHeight(); i++)
+			for (int i = lineaDesdeDondeBorrar; i < ConsoleExt.GetScreenHeight(); i++)
 			{
-				borrarLinea(i);
+				BorrarLinea(i);
 			}
+
+			ConsoleExt.GoToCoordinates(0, 0);
 		}
 	}
 }

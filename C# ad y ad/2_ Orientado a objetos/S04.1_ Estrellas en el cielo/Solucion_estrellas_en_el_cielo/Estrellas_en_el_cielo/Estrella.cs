@@ -26,7 +26,7 @@ namespace Estrellas_en_el_cielo
 		public void Draw()
 		{
 			ConsoleExt.GoToCoordinates(posicion.x, posicion.y);
-			ConsoleExt.WriteInColor("*", ConsoleColor.Yellow);
+			ConsoleExt.WriteWithColor("*", ConsoleColor.Yellow);
 		}
 
 		public Posicion GetPosicion()

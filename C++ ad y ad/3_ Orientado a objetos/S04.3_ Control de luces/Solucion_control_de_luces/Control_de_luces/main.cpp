@@ -15,18 +15,21 @@ int main()
 {
 	bool enPrograma = true;
 
-	int anchoConsola = ConsoleExt::getScreenWidth();
-	int altoConsola = ConsoleExt::getScreenHeight();
+	int anchoConsola = ConsoleExt::getScreenWidth() - 1;
+	int altoConsola = ConsoleExt::getScreenHeight() - 1;
 
 	const int cantidadLuces = 5;
 	Luz* luces[cantidadLuces];
 
-	string titulo = "CONTROL DE LUCES";
+	const string titulo = "CONTROL DE LUCES";
 	int posicionTituloX = anchoConsola / 2 - titulo.size() / 2;
 	int posicionTituloY = 2;
 
 	int opcionIngresada = 0;
 
+
+
+	ConsoleExt::setConsoleTitle(titulo);
 
 	for (int i = 0; i < cantidadLuces; i++)
 	{
@@ -57,16 +60,12 @@ int main()
 
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 17);
 		cout << "1. ENCENDER TODAS LAS LUCES";
-
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 18);
 		cout << "2. APAGAR TODAS LAS LUCES";
-
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 19);
 		cout << "3. ENCENDER UNA LUZ";
-
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 20);
 		cout << "4. APAGAR UNA LUZ";
-
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - 15, posicionTituloY + 21);
 		cout << "5. SALIR";
 
@@ -93,7 +92,6 @@ int main()
 				}
 
 				ConsoleExt::goToCoordinates(anchoConsola / 2 - 37, posicionTituloY + 25);
-
 				ConsoleExt::writeWithColor("Todas las luces fueron prendidas. ", COLOR::C_GREEN);
 			}
 			else
@@ -124,7 +122,6 @@ int main()
 				}
 
 				ConsoleExt::goToCoordinates(anchoConsola / 2 - 36, posicionTituloY + 25);
-
 				ConsoleExt::writeWithColor("Todas las luces fueron apagadas. ", COLOR::C_GREEN);
 			}
 			else
@@ -239,8 +236,15 @@ int main()
 		}
 	}
 
-
 	ConsoleExt::getKey(true);
+	cout << endl;
+
+	for (int i = 0; i < cantidadLuces; i++)
+	{
+		delete luces[i];
+	}
+
+
 
 	return 0;
 }
@@ -249,13 +253,13 @@ void borrarLinea(int linea)
 {
 	for (int i = 0; i < ConsoleExt::getScreenWidth(); i++)
 	{
-		ConsoleExt::goToCoordinates(i + 1, linea);
+		ConsoleExt::goToCoordinates(i, linea);
 		cout << " ";
 	}
 }
 void borrarPantalla(int lineaDesdeDondeBorrar)
 {
-	for (int i = lineaDesdeDondeBorrar; i <= ConsoleExt::getScreenHeight(); i++)
+	for (int i = lineaDesdeDondeBorrar; i < ConsoleExt::getScreenHeight(); i++)
 	{
 		borrarLinea(i);
 	}

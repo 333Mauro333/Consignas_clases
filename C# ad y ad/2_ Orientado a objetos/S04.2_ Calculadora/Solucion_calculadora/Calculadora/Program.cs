@@ -17,12 +17,14 @@ namespace Calculadora
 			Pantalla pantallaActual = Pantalla.MenuPrincipal;
 			Operacion operacionElegida = Operacion.Suma;
 
-			string opcion1 = "1. REALIZAR UNA OPERACIÓN";
-			string opcion2 = "2. CAMBIAR EL TIPO DE CALCULADORA";
-			string opcion3 = "3. ESTADÍSTICAS";
-			string opcion4 = "4. APAGAR";
+			const string tituloPrograma = "Calculadora";
 
-			string mensajeFinal = "¡Gracias por utilizar! Presione cualquier tecla para cerrar la ventana... ";
+			const string opcion1 = "1. REALIZAR UNA OPERACIÓN";
+			const string opcion2 = "2. CAMBIAR EL TIPO DE CALCULADORA";
+			const string opcion3 = "3. ESTADÍSTICAS";
+			const string opcion4 = "4. APAGAR";
+
+			const string mensajeFinal = "¡Gracias por utilizar! Presione cualquier tecla para cerrar la ventana... ";
 
 			float primerNumero = 0.0f;
 			float segundoNumero = 0.0f;
@@ -30,6 +32,9 @@ namespace Calculadora
 
 			int opcionIngresada = 0;
 
+
+
+			ConsoleExt.SetConsoleTitle(tituloPrograma);
 
 			while (enPrograma)
 			{
@@ -41,8 +46,8 @@ namespace Calculadora
 
 						#region Menú principal
 
-						ConsoleExt.GoToCoordinates(anchoConsola / 2 - 10, altoConsola / 2 - 6);
-						Console.Write("--- CALCULADORA ---");
+						ConsoleExt.GoToCoordinates(anchoConsola / 2 - tituloPrograma.Length / 2 - 4, altoConsola / 2 - 6);
+						Console.Write("--- " + tituloPrograma.ToUpper() + " ---");
 
 						if (Calculadora.GetTipoDeCalculadora() == TipoDeCalculadora.Comun)
 						{
@@ -60,19 +65,23 @@ namespace Calculadora
 
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - opcion1.Length / 2, altoConsola / 2);
 						Console.Write(opcion1);
-
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - opcion2.Length / 2, altoConsola / 2 + 1);
 						Console.Write(opcion2);
-
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - opcion3.Length / 2, altoConsola / 2 + 2);
 						Console.Write(opcion3);
-
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - opcion4.Length / 2, altoConsola / 2 + 3);
 						Console.Write(opcion4);
 
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - 20, altoConsola / 2 + 6);
 						Console.Write("Opción elegida: ");
-						opcionIngresada = int.Parse(Console.ReadLine());
+						try
+						{
+							opcionIngresada = int.Parse(Console.ReadLine());
+						}
+						catch (Exception e)
+						{
+
+						}
 
 						switch (opcionIngresada)
 						{
@@ -109,14 +118,8 @@ namespace Calculadora
 
 							case 4:
 
-								#region Finalización del programa
-
+								// Se finaliza el programa.
 								enPrograma = false;
-
-								ConsoleExt.GoToCoordinates(anchoConsola / 2 - mensajeFinal.Length / 2, altoConsola / 2 + 8);
-								ConsoleExt.WriteInColor(mensajeFinal, ConsoleColor.Green);
-
-								#endregion
 
 								break;
 						}
@@ -339,6 +342,9 @@ namespace Calculadora
 				}
 			}
 
+			ConsoleExt.GoToCoordinates(anchoConsola / 2 - mensajeFinal.Length / 2, altoConsola / 2 + 8);
+			ConsoleExt.WriteWithColor(mensajeFinal, ConsoleColor.Green);
+
 
 
 			Console.ReadKey(true);
@@ -348,7 +354,7 @@ namespace Calculadora
 		{
 			for (int i = 0; i < ConsoleExt.GetScreenWidth(); i++)
 			{
-				ConsoleExt.GoToCoordinates(i + 1, linea);
+				ConsoleExt.GoToCoordinates(i, linea);
 				Console.Write(" ");
 			}
 		}
@@ -358,6 +364,8 @@ namespace Calculadora
 			{
 				BorrarLinea(i);
 			}
+
+			ConsoleExt.GoToCoordinates(0, 0);
 		}
 
 		static string ObtenerOperacionEnString(Operacion operacion, bool enMayuscula = true)

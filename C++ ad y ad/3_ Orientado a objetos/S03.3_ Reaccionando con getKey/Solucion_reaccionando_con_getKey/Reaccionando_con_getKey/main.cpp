@@ -10,16 +10,16 @@ using namespace mgtv_library::console;
 
 void resaltarOpcion(string opcion, int posicionY);
 
-void avanzarOpcion(int& opcion, int opcionMaxima);
-void retrocederOpcion(int& opcion, int opcionMaxima);
+void avanzarOpcion(int& opcion, int cantidadDeOpciones);
+void retrocederOpcion(int& opcion, int cantidadDeOpciones);
 void entrarALaOpcion(OPCION_DEL_MENU opcionAIngresar);
 
 int main()
 {
-	const int opcionMaxima = 5;
+	const int cantidadDeOpciones = 5;
 
-	int anchoVentana = ConsoleExt::getScreenWidth();
-	int altoVentana = ConsoleExt::getScreenHeight();
+	int anchoVentana = ConsoleExt::getScreenWidth() - 1;
+	int altoVentana = ConsoleExt::getScreenHeight() - 1;
 
 	bool inProgram = true;
 	int opcionSeleccionada = 1;
@@ -33,10 +33,10 @@ int main()
 
 	const string mensajeFinal = "Presione cualquier tecla para cerrar la ventana... ";
 
-	const char teclaArriba1 = 'W';
-	const char teclaArriba2 = 'w';
-	const char teclaAbajo1 = 'S';
-	const char teclaAbajo2 = 's';
+	const int teclaArriba1 = KEY_UP;
+	const int teclaAbajo1 = KEY_DOWN;
+	const int teclaEntrar = KEY_ENTER;
+
 
 
 	ConsoleExt::hideCursor();
@@ -49,16 +49,12 @@ int main()
 
 		ConsoleExt::goToCoordinates(anchoVentana / 2 - opcion1.size() / 2, altoVentana / 2 - 2);
 		cout << opcion1;
-
 		ConsoleExt::goToCoordinates(anchoVentana / 2 - opcion2.size() / 2 + 1, altoVentana / 2 - 1);
 		cout << opcion2;
-
 		ConsoleExt::goToCoordinates(anchoVentana / 2 - opcion3.size() / 2, altoVentana / 2);
 		cout << opcion3;
-
 		ConsoleExt::goToCoordinates(anchoVentana / 2 - opcion4.size() / 2 + 1, altoVentana / 2 + 1);
 		cout << opcion4;
-
 		ConsoleExt::goToCoordinates(anchoVentana / 2 - opcion5.size() / 2, altoVentana / 2 + 2);
 		cout << opcion5;
 
@@ -98,19 +94,17 @@ int main()
 		switch (teclaPresionada)
 		{
 		case teclaArriba1:
-		case teclaArriba2:
-			retrocederOpcion(opcionSeleccionada, opcionMaxima);
+			retrocederOpcion(opcionSeleccionada, cantidadDeOpciones);
 			break;
 
 		case teclaAbajo1:
-		case teclaAbajo2:
-			avanzarOpcion(opcionSeleccionada, opcionMaxima);
+			avanzarOpcion(opcionSeleccionada, cantidadDeOpciones);
 			break;
 
-		case KEY_ENTER:
+		case teclaEntrar:
 			entrarALaOpcion((OPCION_DEL_MENU)opcionSeleccionada);
 
-			if (opcionSeleccionada == opcionMaxima)
+			if (opcionSeleccionada == cantidadDeOpciones)
 			{
 				inProgram = false;
 			}
@@ -125,6 +119,7 @@ int main()
 	ConsoleExt::getKey(true);
 
 
+
 	return 0;
 }
 
@@ -134,16 +129,16 @@ void resaltarOpcion(string opcion, int posicionY)
 	const char flechaDerecha = (char)16;    // ►
 
 
-	ConsoleExt::goToCoordinates(ConsoleExt::getScreenWidth() / 2 - opcion.size() / 2 - 2, posicionY);
+	ConsoleExt::goToCoordinates(ConsoleExt::getScreenWidth() / 2 - opcion.size() / 2 - 3, posicionY);
 	cout << flechaDerecha;
 
-	ConsoleExt::goToCoordinates(ConsoleExt::getScreenWidth() / 2 + opcion.size() / 2 + 2, posicionY);
+	ConsoleExt::goToCoordinates(ConsoleExt::getScreenWidth() / 2 + opcion.size() / 2 + 1, posicionY);
 	cout << flechaIzquierda;
 }
 
-void avanzarOpcion(int& opcion, int opcionMaxima)
+void avanzarOpcion(int& opcion, int cantidadDeOpciones)
 {
-	if (opcion != opcionMaxima)
+	if (opcion != cantidadDeOpciones)
 	{
 		opcion++;
 	}
@@ -152,7 +147,7 @@ void avanzarOpcion(int& opcion, int opcionMaxima)
 		opcion = 1;
 	}
 }
-void retrocederOpcion(int& opcion, int opcionMaxima)
+void retrocederOpcion(int& opcion, int cantidadDeOpciones)
 {
 	if (opcion != 1)
 	{
@@ -160,7 +155,7 @@ void retrocederOpcion(int& opcion, int opcionMaxima)
 	}
 	else
 	{
-		opcion = opcionMaxima;
+		opcion = cantidadDeOpciones;
 	}
 }
 void entrarALaOpcion(OPCION_DEL_MENU opcionAIngresar)

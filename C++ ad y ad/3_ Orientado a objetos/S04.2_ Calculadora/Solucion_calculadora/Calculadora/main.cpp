@@ -20,18 +20,20 @@ int main()
 {
 	bool enPrograma = true;
 
-	int anchoConsola = ConsoleExt::getScreenWidth();
-	int altoConsola = ConsoleExt::getScreenHeight();
+	int anchoConsola = ConsoleExt::getScreenWidth() - 1;
+	int altoConsola = ConsoleExt::getScreenHeight() - 1;
 
 	PANTALLA pantallaActual = PANTALLA::MENU_PRINCIPAL;
 	OPERACION operacionElegida = OPERACION::SUMA;
 
-	string opcion1 = "1. REALIZAR UNA OPERACION";
-	string opcion2 = "2. CAMBIAR EL TIPO DE CALCULADORA";
-	string opcion3 = "3. ESTADISTICAS";
-	string opcion4 = "4. APAGAR";
+	const string tituloPrograma = "CALCULADORA";
 
-	string mensajeFinal = "Gracias por utilizar! Presione cualquier tecla para cerrar la ventana... ";
+	const string opcion1 = "1. REALIZAR UNA OPERACION";
+	const string opcion2 = "2. CAMBIAR EL TIPO DE CALCULADORA";
+	const string opcion3 = "3. ESTADISTICAS";
+	const string opcion4 = "4. APAGAR";
+
+	const string mensajeFinal = "Gracias por utilizar! Presione cualquier tecla para cerrar la ventana... ";
 
 	float primerNumero = 0.0f;
 	float segundoNumero = 0.0f;
@@ -39,6 +41,9 @@ int main()
 
 	int opcionIngresada = 0;
 
+
+
+	ConsoleExt::setConsoleTitle(tituloPrograma);
 
 	while (enPrograma)
 	{
@@ -50,8 +55,8 @@ int main()
 
 			#pragma region MENU PRINCIPAL
 
-			ConsoleExt::goToCoordinates(anchoConsola / 2 - 10, altoConsola / 2 - 6);
-			cout << "--- CALCULADORA ---";
+			ConsoleExt::goToCoordinates(anchoConsola / 2 - tituloPrograma.size() / 2 - 6, altoConsola / 2 - 6);
+			cout << "----- " << tituloPrograma << " -----";
 
 			if (Calculadora::getTipoDeCalculadora() == TIPO_DE_CALCULADORA::COMUN)
 			{
@@ -69,13 +74,10 @@ int main()
 
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - opcion1.size() / 2, altoConsola / 2);
 			cout << opcion1;
-
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - opcion2.size() / 2, altoConsola / 2 + 1);
 			cout << opcion2;
-
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - opcion3.size() / 2, altoConsola / 2 + 2);
 			cout << opcion3;
-
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - opcion4.size() / 2, altoConsola / 2 + 3);
 			cout << opcion4;
 
@@ -123,7 +125,7 @@ int main()
 				enPrograma = false;
 
 				ConsoleExt::goToCoordinates(anchoConsola / 2 - mensajeFinal.size() / 2, altoConsola / 2 + 8);
-				ConsoleExt::writeWithColor(mensajeFinal, COLOR::C_LGREEN);
+				ConsoleExt::writeWithColor(mensajeFinal, COLOR::C_GREEN);
 
 				#pragma endregion
 
@@ -338,7 +340,9 @@ int main()
 				break;
 
 			case 2:
+
 				pantallaActual = PANTALLA::MENU_PRINCIPAL;
+
 				break;
 			}
 
@@ -348,8 +352,9 @@ int main()
 		}
 	}
 
-
 	ConsoleExt::getKey(true);
+
+
 
 	return 0;
 }
@@ -358,13 +363,13 @@ void borrarLinea(int linea)
 {
 	for (int i = 0; i < ConsoleExt::getScreenWidth(); i++)
 	{
-		ConsoleExt::goToCoordinates(i + 1, linea);
+		ConsoleExt::goToCoordinates(i, linea);
 		cout << " ";
 	}
 }
 void borrarPantalla(int lineaDesdeDondeBorrar)
 {
-	for (int i = lineaDesdeDondeBorrar; i <= ConsoleExt::getScreenHeight(); i++)
+	for (int i = lineaDesdeDondeBorrar; i < ConsoleExt::getScreenHeight(); i++)
 	{
 		borrarLinea(i);
 	}

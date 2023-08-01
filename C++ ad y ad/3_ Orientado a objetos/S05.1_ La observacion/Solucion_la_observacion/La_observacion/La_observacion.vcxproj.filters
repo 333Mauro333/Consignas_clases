@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a7e012f5-f048-4aad-8dae-6bf4acef21d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\arbol">
+      <UniqueIdentifier>{25ca9b9f-29dc-4e5a-950b-1ac388992ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\persona">
+      <UniqueIdentifier>{937ae4b7-f99d-44fa-9ea2-cce0297d0e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\piedra">
+      <UniqueIdentifier>{1bf6e8e1-d4e7-4a1d-8714-d7709694331e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nube">
+      <UniqueIdentifier>{b7722877-f918-46c4-afd7-226804fb5de6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\persona\persona.cpp">
+      <Filter>src\persona</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\arbol\arbol.cpp">
+      <Filter>src\arbol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\piedra\piedra.cpp">
+      <Filter>src\piedra</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nube\nube.cpp">
+      <Filter>src\nube</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\persona\persona.h">
+      <Filter>src\persona</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arbol\arbol.h">
+      <Filter>src\arbol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\piedra\piedra.h">
+      <Filter>src\piedra</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nube\nube.h">
+      <Filter>src\nube</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

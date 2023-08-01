@@ -1,3 +1,6 @@
-#pragma once
+#ifndef TIPO_DE_CALCULADORA_H
+#define TIPO_DE_CALCULADORA_H
 
 enum class TIPO_DE_CALCULADORA { COMUN, CIENTIFICA };
+
+#endif // !TIPO_DE_CALCULADORA_H

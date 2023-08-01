@@ -1,3 +1,6 @@
-#pragma once
+#ifndef OPCION_DEL_MENU_H
+#define OPCION_DEL_MENU_H
 
 enum class OPCION_DEL_MENU { JUGAR = 1, OPCIONES, AYUDA, CREDITOS, SALIR };
+
+#endif // !OPCION_DEL_MENU_H

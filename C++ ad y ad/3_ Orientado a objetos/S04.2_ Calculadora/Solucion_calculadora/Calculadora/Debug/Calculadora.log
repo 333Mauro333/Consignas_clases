@@ -1,4 +1,0 @@
-﻿  main.cpp
-C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\main.cpp(265,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Calculadora\main.cpp(275,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-  Calculadora.vcxproj -> C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S04.2_ Calculadora\Solucion_calculadora\Debug\Calculadora.exe

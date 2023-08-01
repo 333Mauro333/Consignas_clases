@@ -9,14 +9,12 @@ namespace Reaccionando_con_GetKey
 	{
 		static void Main()
 		{
-			const int opcionMaxima = 5;
-
-			int anchoVentana = ConsoleExt.GetScreenWidth();
-			int altoVentana = ConsoleExt.GetScreenHeight();
-
 			bool inProgram = true;
-			int opcionSeleccionada = 1;
-			ConsoleKey teclaPresionada = ConsoleKey.NoName;
+
+			int anchoVentana = ConsoleExt.GetScreenWidth() - 1;
+			int altoVentana = ConsoleExt.GetScreenHeight() - 1;
+
+			const int cantidadDeOpciones = 5;
 
 			const string opcion1 = "JUGAR";
 			const string opcion2 = "OPCIONES";
@@ -25,6 +23,11 @@ namespace Reaccionando_con_GetKey
 			const string opcion5 = "SALIR";
 
 			const string mensajeFinal = "Presione cualquier tecla para cerrar la ventana... ";
+
+			ConsoleKey teclaPresionada = ConsoleKey.NoName;
+
+			int opcionSeleccionada = 1;
+
 
 
 			ConsoleExt.HideCursor();
@@ -37,16 +40,12 @@ namespace Reaccionando_con_GetKey
 
 				ConsoleExt.GoToCoordinates(anchoVentana / 2 - opcion1.Length / 2, altoVentana / 2 - 2);
 				Console.Write(opcion1);
-
 				ConsoleExt.GoToCoordinates(anchoVentana / 2 - opcion2.Length / 2 + 1, altoVentana / 2 - 1);
 				Console.Write(opcion2);
-
 				ConsoleExt.GoToCoordinates(anchoVentana / 2 - opcion3.Length / 2, altoVentana / 2);
 				Console.Write(opcion3);
-
 				ConsoleExt.GoToCoordinates(anchoVentana / 2 - opcion4.Length / 2 + 1, altoVentana / 2 + 1);
 				Console.Write(opcion4);
-
 				ConsoleExt.GoToCoordinates(anchoVentana / 2 - opcion5.Length / 2, altoVentana / 2 + 2);
 				Console.Write(opcion5);
 
@@ -86,17 +85,17 @@ namespace Reaccionando_con_GetKey
 				switch (teclaPresionada)
 				{
 					case ConsoleKey.UpArrow:
-						RetrocederOpcion(ref opcionSeleccionada, opcionMaxima);
+						RetrocederOpcion(ref opcionSeleccionada, cantidadDeOpciones);
 						break;
 
 					case ConsoleKey.DownArrow:
-						AvanzarOpcion(ref opcionSeleccionada, opcionMaxima);
+						AvanzarOpcion(ref opcionSeleccionada, cantidadDeOpciones);
 						break;
 
 					case ConsoleKey.Enter:
 						EntrarALaOpcion((OpcionDelMenu)opcionSeleccionada);
 
-						if (opcionSeleccionada == opcionMaxima)
+						if (opcionSeleccionada == cantidadDeOpciones)
 						{
 							inProgram = false;
 						}
@@ -106,7 +105,7 @@ namespace Reaccionando_con_GetKey
 			}
 
 			ConsoleExt.GoToCoordinates(anchoVentana / 2 - mensajeFinal.Length / 2, altoVentana / 2 + 7);
-			ConsoleExt.WriteInColor(mensajeFinal, ConsoleColor.Green);
+			ConsoleExt.WriteWithColor(mensajeFinal, ConsoleColor.Green);
 
 
 			Console.ReadKey(true);
@@ -114,16 +113,16 @@ namespace Reaccionando_con_GetKey
 
 		static void ResaltarOpcion(string opcion, int posicionY)
 		{
-			ConsoleExt.GoToCoordinates(ConsoleExt.GetScreenWidth() / 2 - opcion.Length / 2 - 2, posicionY);
+			ConsoleExt.GoToCoordinates(ConsoleExt.GetScreenWidth() / 2 - opcion.Length / 2 - 4, posicionY);
 			Console.Write("►");
 
 			ConsoleExt.GoToCoordinates(ConsoleExt.GetScreenWidth() / 2 + opcion.Length / 2 + 2, posicionY);
 			Console.Write("◄");
 		}
 
-		static void AvanzarOpcion(ref int opcion, int opcionMaxima)
+		static void AvanzarOpcion(ref int opcion, int cantidadDeOpciones)
 		{
-			if (opcion != opcionMaxima)
+			if (opcion != cantidadDeOpciones)
 			{
 				opcion++;
 			}
@@ -132,7 +131,7 @@ namespace Reaccionando_con_GetKey
 				opcion = 1;
 			}
 		}
-		static void RetrocederOpcion(ref int opcion, int opcionMaxima)
+		static void RetrocederOpcion(ref int opcion, int cantidadDeOpciones)
 		{
 			if (opcion != 1)
 			{
@@ -140,7 +139,7 @@ namespace Reaccionando_con_GetKey
 			}
 			else
 			{
-				opcion = opcionMaxima;
+				opcion = cantidadDeOpciones;
 			}
 		}
 		static void EntrarALaOpcion(OpcionDelMenu opcionAIngresar)

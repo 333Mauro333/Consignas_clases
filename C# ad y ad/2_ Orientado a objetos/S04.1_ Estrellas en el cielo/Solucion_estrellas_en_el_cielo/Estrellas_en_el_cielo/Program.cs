@@ -9,31 +9,32 @@ namespace Estrellas_en_el_cielo
 	{
 		static void Main()
 		{
-			Estrella estrella1 = new Estrella();
-			Estrella estrella2 = new Estrella();
-
-			Random generar = new Random();
-
 			bool enPrograma = true;
-
-			string titulo = "ESTRELLAS EN EL CIELO";
 
 			int anchoConsola = ConsoleExt.GetScreenWidth();
 			int altoConsola = ConsoleExt.GetScreenHeight();
 
-			int distanciaBordeX = 20;
-			int distanciaBordeYSup = 4;
-			int distanciaBordeYInf = 15;
+			const string titulo = "Estrellas en el cielo";
+
+			const int distanciaBordeX = 20;
+			const int distanciaBordeYSup = 4;
+			const int distanciaBordeYInf = 15;
 
 			int marcoBordeIzquierdo = distanciaBordeX;
 			int marcoBordeDerecho = anchoConsola - distanciaBordeX;
 			int marcoBordeSuperior = distanciaBordeYSup;
 			int marcoBordeInferior = altoConsola - distanciaBordeYInf;
 
+			Estrella estrella1 = new Estrella();
+			Estrella estrella2 = new Estrella();
+
+			Random generar = new Random();
+
 			int opcion = 0;
 
 			int x = 0;
 			int y = 0;
+
 
 
 			ConsoleExt.SetConsoleTitle(titulo);
@@ -56,7 +57,7 @@ namespace Estrellas_en_el_cielo
 				Console.Clear();
 
 				ConsoleExt.GoToCoordinates(anchoConsola / 2 - titulo.Length / 2, marcoBordeSuperior - 1);
-				ConsoleExt.WriteInColor(titulo, ConsoleColor.White);
+				ConsoleExt.WriteWithColor(titulo.ToUpper(), ConsoleColor.White);
 
 				ConsoleExt.DrawFrame(marcoBordeIzquierdo, marcoBordeSuperior, marcoBordeDerecho, marcoBordeInferior);
 
@@ -74,20 +75,18 @@ namespace Estrellas_en_el_cielo
 
 				ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 7);
 				Console.Write("1. Establecer posiciones aleatorias");
-
 				ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 8);
 				Console.Write("2. Definir una nueva posición");
-
 				ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 9);
 				Console.Write("3. Salir del programa");
 
-				opcion = PedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ", false);
+				opcion = PedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opción ingresada: ", false);
 
 				switch (opcion)
 				{
 					case 1:
 
-						#region POSICIONAMIENTO ALEATORIO DE LAS ESTRELLAS
+						#region Posicionamiento aleatorio de las estrellas
 
 						x = generar.Next(marcoBordeIzquierdo + 1, marcoBordeDerecho);
 						y = generar.Next(marcoBordeSuperior + 1, marcoBordeInferior);
@@ -109,27 +108,25 @@ namespace Estrellas_en_el_cielo
 
 					case 2:
 
-						#region PEDIDO DE COORDENADAS Y ESTRELLA
+						#region Pedido de coordenadas y estrella
 
 						BorrarMenu(marcoBordeInferior + 6);
 
 						ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 7);
 						Console.Write("1. Cambiar posición de la primera estrella");
-
 						ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 8);
 						Console.Write("2. Cambiar posición de la segunda estrella");
-
 						ConsoleExt.GoToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 9);
 						Console.Write("3. Volver al menú principal");
 
-						opcion = PedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ", false);
+						opcion = PedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opción ingresada: ", false);
 
 						if (opcion != 3)
 						{
 							BorrarMenu(marcoBordeInferior + 6);
 
-							x = PedirNumero(marcoBordeIzquierdo + 1, marcoBordeDerecho - 1, marcoBordeIzquierdo, marcoBordeInferior + 7, "Ingrese la posicion X", true);
-							y = PedirNumero(marcoBordeSuperior + 1, marcoBordeInferior - 1, marcoBordeIzquierdo, marcoBordeInferior + 8, "Ingrese la posicion Y", true);
+							x = PedirNumero(marcoBordeIzquierdo + 1, marcoBordeDerecho - 1, marcoBordeIzquierdo, marcoBordeInferior + 7, "Ingrese la posición X", true);
+							y = PedirNumero(marcoBordeSuperior + 1, marcoBordeInferior - 1, marcoBordeIzquierdo, marcoBordeInferior + 8, "Ingrese la posición Y", true);
 
 							switch (opcion)
 							{
@@ -153,7 +150,7 @@ namespace Estrellas_en_el_cielo
 
 					case 3:
 
-						#region SALIDA DEL PROGRAMA
+						#region Salida del programa
 
 						enPrograma = false;
 
@@ -166,8 +163,9 @@ namespace Estrellas_en_el_cielo
 				}
 			}
 
-
 			Console.Write("Presione cualquier tecla para cerrar la ventana... ");
+
+
 
 			Console.ReadKey(true);
 		}
@@ -183,13 +181,11 @@ namespace Estrellas_en_el_cielo
 				BorrarMenu(y);
 				ConsoleExt.GoToCoordinates(x, y);
 
+				Console.Write(mensaje);
+
 				if (muestraLimites)
 				{
-					Console.Write(mensaje + " (entre " + limMin + " y " + limMax + "): ");
-				}
-				else
-				{
-					Console.Write(mensaje);
+					Console.Write(" (entre " + limMin + " y " + limMax + "): ");
 				}
 
 				try
@@ -215,7 +211,7 @@ namespace Estrellas_en_el_cielo
 
 		static void BorrarLinea(int linea)
 		{
-			ConsoleExt.GoToCoordinates(1, linea);
+			ConsoleExt.GoToCoordinates(0, linea);
 
 			for (int i = 0; i < ConsoleExt.GetScreenWidth(); i++)
 			{
@@ -228,6 +224,8 @@ namespace Estrellas_en_el_cielo
 			{
 				BorrarLinea(i);
 			}
+
+			ConsoleExt.GoToCoordinates(0, 0);
 		}
 	}
 }

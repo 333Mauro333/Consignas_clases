@@ -23,29 +23,30 @@ int main()
 
 	bool enPrograma = true;
 
-	string titulo = "ESTRELLAS EN EL CIELO";
+	const string titulo = "ESTRELLAS EN EL CIELO";
 
-	int anchoConsola = ConsoleExt::getScreenWidth();
-	int altoConsola = ConsoleExt::getScreenHeight();
+	int anchoConsola = ConsoleExt::getScreenWidth() - 1;
+	int altoConsola = ConsoleExt::getScreenHeight() - 1;
 
-	int distanciaBordeX = 20;
-	int distanciaBordeYSup = 4;
-	int distanciaBordeYInf = 15;
+	const int distanciaBordeX = 20;
+	const int distanciaBordeYSup = 4;
+	const int distanciaBordeYInf = 15;
 
 	int marcoBordeIzquierdo = distanciaBordeX;
 	int marcoBordeDerecho = anchoConsola - distanciaBordeX;
 	int marcoBordeSuperior = distanciaBordeYSup;
 	int marcoBordeInferior = altoConsola - distanciaBordeYInf;
 
-	int opcion = 0;
+	int opcionIngresada = 0;
 
 	int x = 0;
 	int y = 0;
 
 
+
 	srand(time(NULL));
 
-	ConsoleExt::setConsoleTitle(titulo.c_str());
+	ConsoleExt::setConsoleTitle(titulo);
 
 	x = obtenerNumeroRandom(marcoBordeIzquierdo + 1, marcoBordeDerecho - 1);
 	y = obtenerNumeroRandom(marcoBordeSuperior + 1, marcoBordeInferior - 1);
@@ -64,9 +65,11 @@ int main()
 	{
 		system("cls");
 
+		// Se escribe el titulo.
 		ConsoleExt::goToCoordinates(anchoConsola / 2 - titulo.size() / 2, marcoBordeSuperior - 1);
 		ConsoleExt::writeWithColor(titulo, COLOR::C_BWHITE);
 
+		// Se dibuja el marco que va a contener las estrellas.
 		ConsoleExt::drawFrame(marcoBordeIzquierdo, marcoBordeSuperior, marcoBordeDerecho, marcoBordeInferior);
 
 		estrella1->draw();
@@ -75,24 +78,25 @@ int main()
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 1);
 		cout << "Cambios de posicion totales: " << Estrella::getCantCambiosPosicion() << ".";
 
+		// Se escriben las posiciones de las estrellas.
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 3);
 		escribirPosicionEstrella(estrella1);
-
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 4);
 		escribirPosicionEstrella(estrella2, 2);
 
+		// Se muestra el menu de opciones.
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 7);
 		cout << "1. Establecer posiciones aleatorias";
-
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 8);
 		cout << "2. Definir una nueva posicion";
-
 		ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 9);
 		cout << "3. Salir del programa";
 
-		opcion = pedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ");
+		// Se pide el numero de opcion.
+		opcionIngresada = pedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ");
 
-		switch (opcion)
+		// Se reacciona en cuanto al numero de opcion.
+		switch (opcionIngresada)
 		{
 		case 1:
 
@@ -120,27 +124,29 @@ int main()
 
 			#pragma region PEDIDO DE COORDENADAS Y ESTRELLA
 
-			borrarMenu(marcoBordeInferior + 6);
+			borrarMenu(marcoBordeInferior + 6); // Se borra desde la seccion del menu para abajo.
 
+			// Se muestra el nuevo menu.
 			ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 7);
 			cout << "1. Cambiar posicion de la primera estrella";
-
 			ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 8);
 			cout << "2. Cambiar posicion de la segunda estrella";
-
 			ConsoleExt::goToCoordinates(marcoBordeIzquierdo, marcoBordeInferior + 9);
 			cout << "3. Volver al menu principal";
 
-			opcion = pedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ");
+			// Se pide el numero de opcion.
+			opcionIngresada = pedirNumero(1, 3, marcoBordeIzquierdo, marcoBordeInferior + 11, "Opcion ingresada: ");
 
-			if (opcion != 3)
+			// Se reacciona si la opcion ingresada corresponde al cambio de posicion de una estrella.
+			if (opcionIngresada != 3)
 			{
 				borrarMenu(marcoBordeInferior + 6);
 
 				x = pedirNumero(marcoBordeIzquierdo + 1, marcoBordeDerecho - 1, marcoBordeIzquierdo, marcoBordeInferior + 7, "Ingrese la posicion X", true);
 				y = pedirNumero(marcoBordeSuperior + 1, marcoBordeInferior - 1, marcoBordeIzquierdo, marcoBordeInferior + 8, "Ingrese la posicion Y", true);
 
-				switch (opcion)
+				// Se establece la posicion a la estrella correspondiente.
+				switch (opcionIngresada)
 				{
 				case 1:
 					estrella1->setPosicion(x, y);
@@ -152,8 +158,8 @@ int main()
 				}
 
 				ConsoleExt::goToCoordinates(anchoConsola / 2 - 37, marcoBordeInferior + 10);
-				cout << "Estrella posicionada correctamente. ";
-				system("pause");
+				ConsoleExt::writeWithColor("Estrella posicionada correctamente. Presione cualquier tecla para continuar... ", COLOR::C_GREEN);
+				ConsoleExt::getKey(true);
 			}
 
 			#pragma endregion
@@ -166,8 +172,10 @@ int main()
 
 			enPrograma = false;
 
-			ConsoleExt::goToCoordinates(marcoBordeIzquierdo - 5, marcoBordeInferior + 13);
-			cout << "Programa finalizado. Muchas gracias por utilizar! ";
+			ConsoleExt::goToCoordinates(marcoBordeIzquierdo - 10, marcoBordeInferior + 13);
+			ConsoleExt::writeWithColor("Programa finalizado. Muchas gracias por utilizar! Presione cualquier tecla para cerrar la ventana... ", COLOR::C_GREEN);
+			ConsoleExt::getKey(true);
+			cout << endl;
 
 			#pragma endregion
 
@@ -175,11 +183,10 @@ int main()
 		}
 	}
 
-
-	system("pause");
-
 	delete estrella1;
 	delete estrella2;
+
+
 
 	return 0;
 }
@@ -195,13 +202,11 @@ int pedirNumero(int limMin, int limMax, int x, int y, string mensaje, bool muest
 		borrarMenu(y);
 		ConsoleExt::goToCoordinates(x, y);
 
+		cout << mensaje;
+
 		if (muestraLimites)
 		{
-			cout << mensaje << " (entre " << limMin << " y " << limMax << "): ";
-		}
-		else
-		{
-			cout << mensaje;
+			cout << " (entre " << limMin << " y " << limMax << "): ";
 		}
 
 		cin >> num;
@@ -234,7 +239,7 @@ int obtenerNumeroRandom(int min, int max)
 
 void borrarLinea(int linea)
 {
-	ConsoleExt::goToCoordinates(1, linea);
+	ConsoleExt::goToCoordinates(0, linea);
 
 	for (int i = 0; i < ConsoleExt::getScreenWidth(); i++)
 	{
@@ -243,7 +248,7 @@ void borrarLinea(int linea)
 }
 void borrarMenu(int inicioDeBorrado)
 {
-	for (int i = inicioDeBorrado; i <= ConsoleExt::getScreenHeight(); i++)
+	for (int i = inicioDeBorrado; i < ConsoleExt::getScreenHeight(); i++)
 	{
 		borrarLinea(i);
 	}

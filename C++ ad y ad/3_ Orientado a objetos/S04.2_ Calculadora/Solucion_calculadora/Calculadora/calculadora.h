@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CALCULADORA_H
+#define CALCULADORA_H
 
 #include "tipo_de_calculadora.h"
 
@@ -26,5 +27,6 @@ private:
 	static int cuentasHechasCientifica;
 
 	static TIPO_DE_CALCULADORA tipoDeCalculadora;
-
 };
+
+#endif // !CALCULADORA_H

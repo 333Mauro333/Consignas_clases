@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S03.1_ Escribiendo la consola\Solucion_escribiendo_la_consola\Escribiendo_la_consola\main.cpp(40,34): warning C4018: '<=': no coinciden signed/unsigned
+mgtv_library.lib(mgtv_library.obj) : warning LNK4099: no se encontró PDB 'mgtv_library.pdb' con 'mgtv_library.lib(mgtv_library.obj)' o en 'C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S03.1_ Escribiendo la consola\Solucion_escribiendo_la_consola\Debug\mgtv_library.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  Escribiendo_la_consola.vcxproj -> C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C++ ad y ad\3_ Orientado a objetos\S03.1_ Escribiendo la consola\Solucion_escribiendo_la_consola\Debug\Escribiendo_la_consola.exe

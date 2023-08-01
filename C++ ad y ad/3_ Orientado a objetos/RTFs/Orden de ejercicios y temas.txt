@@ -1,34 +1,54 @@
-01: Comienzo POO.
-02: Getters y setters.
+COMIENZO POO:
 
-03: Prácticas con mi librería.
+01.1_ Presentación de personaje.
+01.2_ Corredor olímpico.
+01.3_ Automóvil.
 
-04: 
 
-01: Presentación de personaje (comienzo POO).
-02: Corredor olímpico (comienzo, correr y descansar)
-03: Paracaidista (getters y setters).
+GETTERS Y SETTERS:
 
---- Presentación de librería mgtv ---
+02.1_ Paracaidista.
+02.2_ Pedido.
 
-03: Estrella en el cielo (probando la librería, ningún concepto).
-04: Calculadora (más estático). CAPTURA
-05: Balas en el muro (variables y funciones estáticas. Arreglo de objetos).
-06: Movimiento interactivo (función getKey).
 
-Hacer plan de explicaciones para seguir antes de dar los ejercicios.
+LIBRERÍA MGTV:
+--- Muestra de proyecto de ejemplo ---
 
-07: Nave espacial.
-08: Disparo del jugador (práctica, nada más).
-09: Snake (vectores).
-10: Consolas (relación de dependencia).
-11: Caballero medieval (relación de dependencia).
+03.1_ Escribiendo la consola.
+03.2_ Configurando la consola.
+03.3_ Reaccionando con getKey.
+
+
+STATIC:
+
+04.1_ Estrellas en el cielo.
+04.2_ Calculadora.
+04.3_ Control de luces.
+
+
+RELACIÓN DE DEPENDENCIA:
+
+05.1_ Impresora (HACER).
+05.2_ Consolas (REDACTAR).
+05.3_ Caballero medieval (REDACTAR).
+
+
+DISTRIBUCIÓN DE PROCESOS (UPDATE - DRAW):
+
+06.1_ Movimiento interactivo.
+06.2_ Nave espacial (REDACTAR).
+06.3_ Snake (REDACTAR).
+06.4_ Disparo del jugador (REDACTAR).
+
+
+
 12: Espectador (agregación).
-
-- agregar otro del rifle con la mira.
+13: Usando la mira (agregación, REDACTAR).
+14: Auto de carreras (composición, REDACTAR).
 - agregar uno de composición (auto con las ruedas, cada rueda va a
 tener una cantidad de aire determinada. definir límites. Va a poder
-volver a inflarlas y cambiar por la de repuesto si se pincha una).
+volver a inflarlas y cambiar por la de repuesto si se pincha una.
+Otro de composición: ).
 
 15: Dispositivos electrónicos (herencia).
 16: Tipos de enemigos (polimorfismo).

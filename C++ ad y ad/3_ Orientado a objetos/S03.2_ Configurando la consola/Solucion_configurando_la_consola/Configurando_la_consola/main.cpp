@@ -16,10 +16,10 @@ int main()
 {
 	PANTALLA pantallaActual = PANTALLA::MENU_PRINCIPAL;
 
-	int anchoConsola = ConsoleExt::getScreenWidth();
-	int altoConsola = ConsoleExt::getScreenHeight();
+	int anchoConsola = ConsoleExt::getScreenWidth() - 1;
+	int altoConsola = ConsoleExt::getScreenHeight() - 1;
 
-	string tituloVentana = "Configuracion de la consola";
+	string tituloVentana = "CONFIGURACION DE LA CONSOLA";
 
 	bool seDibujaElMarco = true;
 
@@ -86,7 +86,7 @@ int main()
 
 		if (seDibujaElMarco)
 		{
-			ConsoleExt::drawFrame(1, 1, anchoConsola, altoConsola);
+			ConsoleExt::drawFrame(0, 0, anchoConsola, altoConsola);
 		}
 
 		switch (pantallaActual)
@@ -195,7 +195,7 @@ int main()
 			if (opcion >= 1 && opcion <= 16)
 			{
 				ConsoleExt::goToCoordinates(3, cfPosicionTituloY + 25);
-				cout << "El color del texto fue cambiado correctamente! Presione cualquier tecla para volver al menu principal... ";
+				cout << "El color del fondo fue cambiado correctamente! Presione cualquier tecla para volver al menu principal... ";
 				ConsoleExt::getKey(true);
 
 				ConsoleExt::setBackgroundColor((COLOR)(opcion - 1));
@@ -219,11 +219,12 @@ int main()
 			cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Limpia el buffer para poder ingresar el string.
 			getline(cin, nuevaOracion);
 
-			ConsoleExt::setConsoleTitle(nuevaOracion.c_str());
+			ConsoleExt::setConsoleTitle(nuevaOracion);
 
 			ConsoleExt::goToCoordinates(3, altoConsola / 2 + 1);
 			cout << "El titulo fue aplicado correctamente! Presione cualquier tecla para volver al menu principal... ";
 			ConsoleExt::getKey(true);
+
 			pantallaActual = PANTALLA::MENU_PRINCIPAL;
 
 			#pragma endregion
@@ -239,7 +240,6 @@ int main()
 
 			ConsoleExt::goToCoordinates(rtPosicionInicialX, rtPosicionTituloY + 3);
 			cout << rtOracion1;
-
 			ConsoleExt::goToCoordinates(rtPosicionInicialX, rtPosicionTituloY + 4);
 			cout << rtOracion2;
 
@@ -250,7 +250,7 @@ int main()
 
 				teclaPresionada = ConsoleExt::getKey(true);
 
-				cout << teclaPresionada;
+				cout << (char)teclaPresionada;
 
 				rtPosicionActualCursorY++;
 			}
@@ -279,7 +279,6 @@ int main()
 
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - csPregunta.size() / 2, altoConsola / 2 - 1);
 			cout << "1. SI";
-
 			ConsoleExt::goToCoordinates(anchoConsola / 2 - csPregunta.size() / 2, altoConsola / 2);
 			cout << "2. NO";
 
@@ -291,9 +290,6 @@ int main()
 			{
 			case 1:
 				enPrograma = false;
-
-				ConsoleExt::goToCoordinates(anchoConsola / 2 - csPregunta.size() / 2, altoConsola / 2 + 4);
-				cout << "Presione cualquier tecla para cerrar la ventana... ";
 				break;
 
 			case 2:
@@ -307,7 +303,8 @@ int main()
 		}
 	}
 
-
+	ConsoleExt::goToCoordinates(anchoConsola / 2 - csPregunta.size() / 2, altoConsola / 2 + 4);
+	cout << "Presione cualquier tecla para cerrar la ventana... ";
 
 	ConsoleExt::getKey(true);
 

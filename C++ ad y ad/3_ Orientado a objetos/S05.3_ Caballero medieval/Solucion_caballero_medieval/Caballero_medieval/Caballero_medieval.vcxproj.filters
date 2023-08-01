@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2577e962-98ff-4330-b717-8f6770a2e6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\caballero">
+      <UniqueIdentifier>{85b00a81-eae9-4292-baff-b8bbe2ad8514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\piedra_preciosa">
+      <UniqueIdentifier>{f3282415-267c-473d-9acd-8b2d811b17bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\espada">
+      <UniqueIdentifier>{9700bdd2-2606-4fa5-b858-5a5b48950fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\maniqui">
+      <UniqueIdentifier>{e68c21c4-6ad8-4d3b-8554-d70277e84598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\structs">
+      <UniqueIdentifier>{83ee3e1e-a551-4c48-b34b-109a579b9ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\structs\posicion">
+      <UniqueIdentifier>{2f0e38a5-a7d8-4ca6-be19-9ad8e4c77ddc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\caballero\caballero.cpp">
+      <Filter>src\caballero</Filter>
+    </ClCompile>
+    <ClCompile Include="src\piedra_preciosa\piedra_preciosa.cpp">
+      <Filter>src\piedra_preciosa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\espada\espada.cpp">
+      <Filter>src\espada</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maniqui\maniqui.cpp">
+      <Filter>src\maniqui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\caballero\caballero.h">
+      <Filter>src\caballero</Filter>
+    </ClInclude>
+    <ClInclude Include="src\piedra_preciosa\piedra_preciosa.h">
+      <Filter>src\piedra_preciosa</Filter>
+    </ClInclude>
+    <ClInclude Include="src\espada\espada.h">
+      <Filter>src\espada</Filter>
+    </ClInclude>
+    <ClInclude Include="src\maniqui\maniqui.h">
+      <Filter>src\maniqui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structs\posicion\posicion.h">
+      <Filter>src\structs\posicion</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

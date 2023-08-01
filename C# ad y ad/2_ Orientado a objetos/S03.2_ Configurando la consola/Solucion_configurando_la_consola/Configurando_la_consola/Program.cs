@@ -9,50 +9,51 @@ namespace Configurando_la_consola
 	{
 		static void Main()
 		{
-			// CAMBIAR TÍTULO Y VENTANA DE CONFIRMACIÓN.
+			bool enPrograma = true;
+
 			Pantalla pantallaActual = Pantalla.MenuPrincipal;
 
-			int anchoConsola = ConsoleExt.GetScreenWidth();
-			int altoConsola = ConsoleExt.GetScreenHeight();
+			int anchoConsola = ConsoleExt.GetScreenWidth() - 1;
+			int altoConsola = ConsoleExt.GetScreenHeight() - 1;
 
-			string tituloVentana = "Configuración de la consola";
+			const string tituloVentana = "Configuración de la consola";
 
 			bool seDibujaElMarco = true;
 
 			// mp: Menú principal.
-			string mpTitulo = "----- CONFIGURACIÓN DE LA CONSOLA -----";
-			string mpOpcion1 = "1. Cambiar visibilidad del marco: ";
-			string mpOpcion2 = "2. Seleccionar color del texto";
-			string mpOpcion3 = "3. Seleccionar color del fondo";
-			string mpOpcion4 = "4. Cambiar el título de la ventana";
-			string mpOpcion5 = "5. Probar reacción de teclas";
-			string mpOpcion6 = "6. Cerrar";
+			const string mpTitulo = "----- CONFIGURACIÓN DE LA CONSOLA -----";
+			const string mpOpcion1 = "1. Cambiar visibilidad del marco: ";
+			const string mpOpcion2 = "2. Seleccionar color del texto";
+			const string mpOpcion3 = "3. Seleccionar color del fondo";
+			const string mpOpcion4 = "4. Cambiar el título de la ventana";
+			const string mpOpcion5 = "5. Probar reacción de teclas";
+			const string mpOpcion6 = "6. Cerrar";
 			int mpPosicionTituloX = anchoConsola / 2 - mpTitulo.Length / 2;
 			int mpPosicionTituloY = altoConsola / 2 - 5;
 
 			// ct: Color del texto.
-			string ctTitulo = "--- COLOR DEL TEXTO ---";
-			string ctOracion = "Elija un nuevo color de texto:";
+			const string ctTitulo = "--- COLOR DEL TEXTO ---";
+			const string ctOracion = "Elija un nuevo color de texto:";
 			int ctPosicionTituloX = anchoConsola / 2 - ctTitulo.Length / 2;
 			int ctPosicionTituloY = 3;
 
 			// cf: Color del fondo.
-			string cfTitulo = "--- COLOR DEL FONDO ---";
-			string cfOracion = "Elija un nuevo color de fondo:";
+			const string cfTitulo = "--- COLOR DEL FONDO ---";
+			const string cfOracion = "Elija un nuevo color de fondo:";
 			int cfPosicionTituloX = anchoConsola / 2 - cfTitulo.Length / 2;
 			int cfPosicionTituloY = 3;
 
 			// tv: Título de la ventana.
-			string tvTitulo = "--- CAMBIO DE TÍTULO DE LA VENTANA ---";
-			string tvOracion = "Ingrese el nuevo título para la ventana: ";
+			const string tvTitulo = "--- CAMBIO DE TÍTULO DE LA VENTANA ---";
+			const string tvOracion = "Ingrese el nuevo título para la ventana: ";
 			int tvPosicionTituloX = anchoConsola / 2 - tvTitulo.Length / 2;
 			int tvPosicionTituloY = 3;
 			string nuevaOracion = "";
 
 			// rt: Reacción de teclas.
-			string rtTitulo = "--- REACCIÓN DE TECLAS PRESIONADAS ---";
-			string rtOracion1 = "En esta sección, se escribirán las teclas que ha presionado.";
-			string rtOracion2 = "Para finalizar, presione la tecla " + ConsoleKey.Escape + ".";
+			const string rtTitulo = "--- REACCIÓN DE TECLAS PRESIONADAS ---";
+			const string rtOracion1 = "En esta sección, se escribirán las teclas que ha presionado.";
+			const string rtOracion2 = "Para finalizar, presione la tecla Escape.";
 			int rtPosicionTituloX = anchoConsola / 2 - rtTitulo.Length / 2;
 			int rtPosicionTituloY = 3;
 
@@ -61,16 +62,14 @@ namespace Configurando_la_consola
 			int rtPosicionActualCursorY = rtPosicionInicialY;
 
 			// cs: Confirmación de salida
-			string csTitulo = "--- CONFIRMACIÓN DE SALIDA ---";
-			string csPregunta = "¿Desea cerrar el programa?";
+			const string csTitulo = "--- CONFIRMACIÓN DE SALIDA ---";
+			const string csPregunta = "¿Desea cerrar el programa?";
 			int csPosicionTituloX = anchoConsola / 2 - csTitulo.Length / 2;
 			int csPosicionTituloY = 3;
 
-			ConsoleKey teclaPresionada = 0;
+			int opcionIngresada = 0;
 
-
-			bool enPrograma = true;
-			int opcion = 0;
+			ConsoleKey teclaPresionada = ConsoleKey.NoName;
 
 
 
@@ -89,7 +88,7 @@ namespace Configurando_la_consola
 				{
 					case Pantalla.MenuPrincipal:
 
-						#region Menu Principal
+						#region Menú Principal
 
 						ConsoleExt.GoToCoordinates(mpPosicionTituloX, mpPosicionTituloY);
 						Console.Write(mpTitulo);
@@ -119,13 +118,13 @@ namespace Configurando_la_consola
 
 						ConsoleExt.GoToCoordinates(mpPosicionTituloX - mpTitulo.Length / 4, mpPosicionTituloY + 9);
 						Console.Write("Opción ingresada: ");
-						opcion = int.Parse(Console.ReadLine());
+						opcionIngresada = int.Parse(Console.ReadLine());
 
-						if (opcion >= 2 && opcion <= 6)
+						if (opcionIngresada >= 2 && opcionIngresada <= 6)
 						{
-							pantallaActual = (Pantalla)opcion;
+							pantallaActual = (Pantalla)opcionIngresada;
 						}
-						else if (opcion == 1)
+						else if (opcionIngresada == 1)
 						{
 							seDibujaElMarco = !seDibujaElMarco;
 						}
@@ -136,7 +135,7 @@ namespace Configurando_la_consola
 
 					case Pantalla.ColorDelTexto:
 
-						#region Color de texto
+						#region Color del texto
 
 						ConsoleExt.GoToCoordinates(ctPosicionTituloX, ctPosicionTituloY);
 						Console.Write(ctTitulo);
@@ -152,15 +151,15 @@ namespace Configurando_la_consola
 
 						ConsoleExt.GoToCoordinates(3, ctPosicionTituloY + 23);
 						Console.Write("Opción elegida: ");
-						opcion = int.Parse(Console.ReadLine());
+						opcionIngresada = int.Parse(Console.ReadLine());
 
-						if (opcion >= 1 && opcion <= 16)
+						if (opcionIngresada >= 1 && opcionIngresada <= 16)
 						{
 							ConsoleExt.GoToCoordinates(3, ctPosicionTituloY + 25);
 							Console.Write("¡El color del texto fue cambiado correctamente! Presione cualquier tecla para volver al menú principal... ");
 							Console.ReadKey(true);
 
-							ConsoleExt.SetForegroundColor((ConsoleColor)(opcion - 1));
+							ConsoleExt.SetForegroundColor((ConsoleColor)(opcionIngresada - 1));
 							pantallaActual = Pantalla.MenuPrincipal;
 						}
 
@@ -186,15 +185,15 @@ namespace Configurando_la_consola
 
 						ConsoleExt.GoToCoordinates(3, cfPosicionTituloY + 23);
 						Console.Write("Opción elegida: ");
-						opcion = int.Parse(Console.ReadLine());
+						opcionIngresada = int.Parse(Console.ReadLine());
 
-						if (opcion >= 1 && opcion <= 16)
+						if (opcionIngresada >= 1 && opcionIngresada <= 16)
 						{
 							ConsoleExt.GoToCoordinates(3, cfPosicionTituloY + 25);
 							Console.Write("¡El color del fondo fue cambiado correctamente! Presione cualquier tecla para volver al menú principal... ");
 							Console.ReadKey(true);
 
-							ConsoleExt.SetBackgroundColor((ConsoleColor)(opcion - 1));
+							ConsoleExt.SetBackgroundColor((ConsoleColor)(opcionIngresada - 1));
 							pantallaActual = Pantalla.MenuPrincipal;
 						}
 
@@ -204,7 +203,7 @@ namespace Configurando_la_consola
 
 					case Pantalla.CambiarTitulo:
 
-						#region Cambiar titulo
+						#region Cambiar título
 
 						ConsoleExt.GoToCoordinates(tvPosicionTituloX, tvPosicionTituloY);
 						Console.Write(tvTitulo);
@@ -227,7 +226,7 @@ namespace Configurando_la_consola
 
 					case Pantalla.ReaccionDeTeclas:
 
-						#region Reaccion de teclas
+						#region Reacción de teclas
 
 						ConsoleExt.GoToCoordinates(rtPosicionTituloX, rtPosicionTituloY);
 						Console.Write(rtTitulo);
@@ -264,7 +263,7 @@ namespace Configurando_la_consola
 
 					case Pantalla.ConfirmacionDeSalida:
 
-						#region Confirmacion de salida
+						#region Confirmación de salida
 
 						ConsoleExt.GoToCoordinates(csPosicionTituloX, csPosicionTituloY);
 						Console.Write(csTitulo);
@@ -280,19 +279,22 @@ namespace Configurando_la_consola
 
 						ConsoleExt.GoToCoordinates(anchoConsola / 2 - csPregunta.Length / 2, altoConsola / 2 + 2);
 						Console.Write("Opción elegida: ");
-						opcion = int.Parse(Console.ReadLine());
+						opcionIngresada = int.Parse(Console.ReadLine());
 
-						switch (opcion)
+						switch (opcionIngresada)
 						{
 							case 1:
 								enPrograma = false;
 
 								ConsoleExt.GoToCoordinates(anchoConsola / 2 - csPregunta.Length / 2, altoConsola / 2 + 4);
-								Console.Write("Presione cualquier tecla para cerrar la ventana... ");
+								ConsoleExt.WriteWithColor("Presione cualquier tecla para cerrar la ventana... ", ConsoleColor.Green);
+
 								break;
 
 							case 2:
+
 								pantallaActual = Pantalla.MenuPrincipal;
+
 								break;
 						}
 

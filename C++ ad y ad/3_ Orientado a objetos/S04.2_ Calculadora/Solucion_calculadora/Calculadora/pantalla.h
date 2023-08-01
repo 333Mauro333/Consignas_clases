@@ -1,3 +1,6 @@
-#pragma once
+#ifndef PANTALLA_H
+#define PANTALLA_H
 
 enum class PANTALLA { MENU_PRINCIPAL, MENU_COMUN, MENU_CIENTIFICA, ESTADISTICAS };
+
+#endif // !PANTALLA_H

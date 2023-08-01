@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{28c76ce6-6732-4b10-a4ca-6687f368a480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\consola">
+      <UniqueIdentifier>{5ac8743c-01e6-4b3d-a8bd-12d6243d0a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mando">
+      <UniqueIdentifier>{050fc41b-88f3-4d78-9d62-80d963c913c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\enums">
+      <UniqueIdentifier>{28bdf024-9a7e-4747-bc52-b71f75643afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\enums\pantalla">
+      <UniqueIdentifier>{5d8823f6-c3a8-4b98-8c4a-1d4bfdc8a96b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\consola\consola.h">
+      <Filter>src\consola</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mando\mando.h">
+      <Filter>src\mando</Filter>
+    </ClInclude>
+    <ClInclude Include="src\enums\pantalla\pantalla.h">
+      <Filter>src\enums\pantalla</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\consola\consola.cpp">
+      <Filter>src\consola</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mando\mando.cpp">
+      <Filter>src\mando</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

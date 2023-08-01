@@ -1,0 +1,10 @@
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\bin\Debug\Control_de_luces.exe.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\bin\Debug\Control_de_luces.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\bin\Debug\Control_de_luces.pdb
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\bin\Debug\MgtvLibrary.dll
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\bin\Debug\MgtvLibrary.dll.config
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\obj\Debug\Control_de_luces.csproj.AssemblyReference.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\obj\Debug\Control_de_luces.csproj.CoreCompileInputs.cache
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\obj\Debug\Control_de_luces.csproj.CopyComplete
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\obj\Debug\Control_de_luces.exe
+C:\Users\mauro\OneDrive\Escritorio\Temas\_CONSIGNAS\C# ad y ad\2_ Orientado a objetos\S04.3_ Control de luces\Solucion_control_de_luces\Control_de_luces\obj\Debug\Control_de_luces.pdb

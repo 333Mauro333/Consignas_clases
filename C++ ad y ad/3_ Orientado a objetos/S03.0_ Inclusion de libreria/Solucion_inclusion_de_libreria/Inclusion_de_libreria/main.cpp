@@ -8,10 +8,11 @@ using namespace mgtv_library::console;
 
 int main()
 {
-	int anchoConsola = ConsoleExt::getScreenWidth();
-	int altoConsola = ConsoleExt::getScreenHeight();
+	int anchoConsola = ConsoleExt::getScreenWidth() - 1;
+	int altoConsola = ConsoleExt::getScreenHeight() - 1;
 	int distanciaBordesX = 10;
 	int distanciaBordesY = 3;
+
 
 	string titulo = "ESTA ES UNA PRUEBA";
 	string descripcion = "Esta es una introduccion a la novedosa libreria MGTV.";

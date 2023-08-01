@@ -1,10 +1,11 @@
-#pragma once
-
-#include "posicion.h"
+#ifndef LUZ_H
+#define LUZ_H
 
 #include <iostream>
 
 #include "mgtv_library.h"
+
+#include "posicion.h"
 
 using namespace std;
 using namespace mgtv_library::console;
@@ -34,3 +35,5 @@ private:
 
 	string obtenerCaracteres(char caracter, int cantidad);
 };
+
+#endif // !LUZ_H

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ESTRELLA_H
+#define ESTRELLA_H
 
 #include "posicion.h"
 
@@ -21,3 +22,5 @@ private:
 
 	POSICION posicion;
 };
+
+#endif // !ESTRELLA_H
